@@ -1,5 +1,5 @@
-component "violations" {
-  source = "./violations"
+component "app" {
+  source = "./app"
 
   inputs = {
     region = var.region

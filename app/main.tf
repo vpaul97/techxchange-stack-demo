@@ -16,8 +16,6 @@ data "aws_ami" "al2023" {
   }
 }
 
-# Intentionally non-compliant resources for the converted policies:
-# unapproved instance type, unencrypted EBS volume, unencrypted RDS instance.
 resource "aws_instance" "demo" {
   ami           = data.aws_ami.al2023.id
   instance_type = "m5.4xlarge"
